@@ -5,6 +5,8 @@
 
 BATriage is an interactive triaging tool which can be used to search a valid bitcoin address and return information on the address in fast time. Results are returned into command terminal for quick access and an .xlsx report is also generated for each bitcoin address queried, which contains retrieved data.
 
+#### API's Utilises:
+
 - Utilises Blockchain.info API to search for valid P2PKH/P2SH addresses
 and fetch account summary data along with recent activity (50 max).
 
