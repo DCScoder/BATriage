@@ -27,7 +27,7 @@ to standard currencies incl. GBP, USD and EUR.
 - BTC to GBP, USD, EUR real-time currency converters
 - Timestamps of recent transactions (50 max)
 - SHA256 hash values of recent transactions (50 max)
-- ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address.
+- ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address
 
 #### Usage:
 
