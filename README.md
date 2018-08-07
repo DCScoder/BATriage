@@ -1,5 +1,8 @@
 # BATriage
 
+
+#### Description
+
 BATriage is an interactive triaging tool which can be used to search
 a valid bitcoin address and return information on the address in fast time.
 Results are returned into command terminal for quick access and an .xlsx report
@@ -13,6 +16,16 @@ to standard currencies incl. GBP, USD and EUR.
 
 Utilises ShapeShift API to check for any cryptocurrency exchanging.
 
-Artefacts Supported:
+#### Artefacts Supported
 
-Address, Hash160, Address to micro message decoding, Total transactions count, Total BTC received, Total BTC sent, Current BTC balance, BTC to GBP, USD, EUR real-time currency converters, Timestamps of recent transactions (50 max), SHA256 hash values of recent transactions (50 max), ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address.
+- Address
+- Hash160
+- Address to micro message decoding
+- Total transactions count
+- Total BTC received
+- Total BTC sent
+- Current BTC balance
+- BTC to GBP, USD, EUR real-time currency converters
+- Timestamps of recent transactions (50 max)
+- SHA256 hash values of recent transactions (50 max)
+- ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address.
