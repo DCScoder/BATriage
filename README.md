@@ -1,5 +1,4 @@
 # BATriage
-Bitcoin address triage toolkit.
 
 BATriage is an interactive triaging tool which can be used to search
 a valid bitcoin address and return information on the address in fast time.
