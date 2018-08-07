@@ -16,14 +16,4 @@ Utilises ShapeShift API to check for any cryptocurrency exchanging.
 
 Artefacts Supported:
 
-Address
-Hash160
-Address to micro message decoding
-Total transactions count
-Total BTC received
-Total BTC sent
-Current BTC balance
-BTC to GBP, USD, EUR real-time currency converters
-Timestamps of recent transactions (50 max)
-SHA256 hash values of recent transactions (50 max)
-ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address
+Address, Hash160, Address to micro message decoding, Total transactions count, Total BTC received, Total BTC sent, Current BTC balance, BTC to GBP, USD, EUR real-time currency converters, Timestamps of recent transactions (50 max), SHA256 hash values of recent transactions (50 max), ShapeShift lookup, transaction ID, coin type exchanged, withdrawal address.
