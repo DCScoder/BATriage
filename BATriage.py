@@ -131,7 +131,6 @@ def main():
     h160 = (data['hash160'])
     print("Hash160:", h160)
     worksheet_1.write("B3", "Hash160:", format2) + worksheet_1.write("C3", str(h160), format3)
-    #micro_msg = (binascii.unhexlify(h160)).decode("latin-1")
     micro_msg = H2A(h160)
     print("Micro Message:", "*see report*")
     worksheet_1.write("B4", "Micro Message:", format2) + worksheet_1.write("C4", str(micro_msg), format3)
