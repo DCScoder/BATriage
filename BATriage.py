@@ -35,6 +35,7 @@
 #                 v1.2  Improved excel report formatting
 #                 v1.3  Restructure of code
 #                 v1.4  ShapeShift lookup built-in & address/hash160 to micro message decode
+#                 v1.5  Reviewed and updated ShapeShift lookup facility
 #
 #################################################################################
 
@@ -43,7 +44,7 @@ import datetime
 import xlsxwriter
 import binascii
 
-__version__ = 'v1.4'
+__version__ = 'v1.5'
 __author__ = 'DCScoder'
 __email__ = 'dcscoder@gmail.com'
 
@@ -131,6 +132,7 @@ def main():
     h160 = (data['hash160'])
     print("Hash160:", h160)
     worksheet_1.write("B3", "Hash160:", format2) + worksheet_1.write("C3", str(h160), format3)
+    #micro_msg = (binascii.unhexlify(h160)).decode("latin-1")
     micro_msg = H2A(h160)
     print("Micro Message:", "*see report*")
     worksheet_1.write("B4", "Micro Message:", format2) + worksheet_1.write("C4", str(micro_msg), format3)
@@ -254,6 +256,11 @@ def main():
         elif "failed" in ss_data['status']:
             print("Status:", ss_data['status'])
             worksheet_5.write("B3", "Status:", format2) + worksheet_5.write("C3", ss_data['status'], format3)
+
+        elif "error" in ss_data['status']:
+            print("Status: This address is NOT a ShapeShift deposit address.")
+            worksheet_5.write("B3", "Status:", format2) + worksheet_5.write("C3", "This address is NOT a ShapeShift"
+                                                                                  " deposit address.", format3)
 
         elif "complete" in ss_data['status']:
             print("Status: Deposit received via ShapeShift and processed.\n")
